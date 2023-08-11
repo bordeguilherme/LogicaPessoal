@@ -26,7 +26,7 @@ programa
 		} enquanto (verificador == falso)
 
 		se (entradaMenu == "Sim" ou entradaMenu == "sim"){
-		//faca {
+		faca {
 			escreva ("Digite a opção do menu correspondente:")
 			escreva ("\n 1 - Listar produtos com estoque")
 			escreva ("\n 2 - Listar produtos sem estoque")
@@ -34,13 +34,13 @@ programa
 			leia (menu)
 			se (menu == 1 )
 			{
-				para (inteiro i = 1; i<= 5; i++){
-					escreva (comEstoque[i])
+				para (inteiro i = 0; i<= 4; i++){
+					escreva (comEstoque[i], "\n")
 				}
 			}
 			se (menu == 2 ){
-				para (inteiro i = 1; i<= 5; i++){
-					escreva (semEstoque[i])
+				para (inteiro i = 0; i<= 4; i++){
+					escreva (semEstoque[i], "\n")
 				}
 			}
 			se (menu == 3){
@@ -52,7 +52,7 @@ programa
 			}
 			
 			
-		//} enquanto (entradaMenu == "Sim" ou entradaMenu == "sim")
+		} enquanto (entradaMenu == "Sim" ou entradaMenu == "sim")
 	
 		}
 		se (entradaMenu == "Nao" ou entradaMenu == "nao") {
@@ -65,7 +65,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1460; 
+ * @POSICAO-CURSOR = 1402; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
